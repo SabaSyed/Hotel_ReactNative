@@ -27,17 +27,11 @@ export class Filters extends Component {
             start={{ x: 0, y: 1 }}
             end={{ x: 1, y: 1 }}
           >
-            <View>
-              <Text style={Styles.headerText}>APP NAME</Text>
+            <View style={Styles.headertextcontainer}>
+              <Text style={Styles.headerText}>Hotel reservation</Text>
             </View>
-          </LinearGradient>
-          <LinearGradient
-            style={Styles.headerSearchContainer}
-            colors={["#18e9ff", "#18c0ff", "#46beff"]}
-            start={{ x: 0, y: 1 }}
-            end={{ x: 1, y: 1 }}
-          >
-            <View>
+          
+            <View style={Styles.headerSearchContainer}>
               <Searchbar
                 style={Styles.headerSearchBar}
                 placeholder="Search"
@@ -46,14 +40,7 @@ export class Filters extends Component {
                 }}
               />
             </View>
-          </LinearGradient>
-          <LinearGradient
-            style={Styles.headerCurveContainer}
-            colors={["#18e9ff", "#18c0ff", "#46beff"]}
-            start={{ x: 0, y: 1 }}
-            end={{ x: 1, y: 1 }}
-          >
-            <View></View>
+          
           </LinearGradient>
         </View>
       </SafeAreaView>
@@ -63,27 +50,29 @@ export class Filters extends Component {
 
 const Styles = StyleSheet.create({
   container: {
-    flex: 1,
+    flex: 1.3,
     justifyContent: "center",
-    flexDirection: "column",
   },
   headerContainer: {
-    flex: 3 / 2,
+    flex: 1,
     width: "100%",
-    display: "flex",
-    flexDirection: "column",
   },
   headerTopContainer: {
-    paddingTop: 10,
-    flex: 4,
-    //backgroundColor: "#18e4ff",
+    flex: 1,
     width: "100%",
-    display: "flex",
-    flexDirection: "row",
     justifyContent: "center",
     alignItems: "center",
+    borderBottomLeftRadius:25,
+    borderBottomRightRadius:25,
   },
+  headertextcontainer:{
+    width:'100%',
+    flex:4,
+    justifyContent: "center",
+    alignItems: "center",
+    paddingTop:10,
 
+  },
   headerText: {
     color: "white",
     fontSize: 35,
@@ -91,35 +80,10 @@ const Styles = StyleSheet.create({
   },
 
   headerSearchContainer: {
-    flex: 3 / 2,
-    backgroundColor: "#18e4ff",
+    flex: 4,
     width: "100%",
     justifyContent: "center",
-    margin: 0,
     alignItems: "center",
-    // backgroundColor: "red",
-  },
-  headerSearchBar: {
-    width: '93%',
-    margin: 0,
-    alignContent: "center",
-    justifyContent: "center",
-    height: 40,
-    borderRadius: 10,
-  },
-  headerCurveContainer: {
-    flex: 1,
-    width: "100%",
-    // backgroundColor: "#18e4ff",
-    borderBottomLeftRadius: 15,
-    borderBottomRightRadius: 15,
-  },
-
-  scrollLabelContainer: {
-    height: 50,
-    width: "100%",
-    marginTop: 5,
-    justifyContent: "center",
   },
 });
 
