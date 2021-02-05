@@ -30,7 +30,7 @@ export class Filters extends Component {
             <View style={Styles.headertextcontainer}>
               <Text style={Styles.headerText}>Hotel reservation</Text>
             </View>
-          
+
             <View style={Styles.headerSearchContainer}>
               <Searchbar
                 style={Styles.headerSearchBar}
@@ -40,7 +40,7 @@ export class Filters extends Component {
                 }}
               />
             </View>
-          
+
           </LinearGradient>
         </View>
       </SafeAreaView>
@@ -50,7 +50,7 @@ export class Filters extends Component {
 
 const Styles = StyleSheet.create({
   container: {
-    flex: 1.3,
+    flex: 3,
     justifyContent: "center",
   },
   headerContainer: {
@@ -62,17 +62,17 @@ const Styles = StyleSheet.create({
     width: "100%",
     justifyContent: "center",
     alignItems: "center",
-    borderBottomLeftRadius:25,
-    borderBottomRightRadius:25,
+    borderBottomLeftRadius: 25,
+    borderBottomRightRadius: 25,
   },
-  headertextcontainer:{
-    width:'100%',
-    flex:4,
+  headertextcontainer: {
+    width: '100%',
+    flex: 4,
     justifyContent: "center",
     alignItems: "center",
-    paddingTop:10,
-
+    paddingTop: 10,
   },
+
   headerText: {
     color: "white",
     fontSize: 35,
